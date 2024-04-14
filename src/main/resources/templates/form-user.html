@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Formulario de Usuarios</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link th:href="@{/webjars/bootstrap/5.3.2/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 <body>
 <div class="container">
@@ -19,11 +19,13 @@
                 <input type="hidden" th:field="*{id}">
                 <div class="mb-3">
                     <label class="form-label" for="nombre">Nombre:</label>
-                    <input class="form-control " type="text" id="nombre" th:field="*{name}">
+                    <input class="form-control" type="text" id="nombre" th:field="*{name}">
                 </div>
 
                 <button class="btn btn-primary" type="submit">Guardar</button>
                 <a class="btn btn-light" href="/users">Volver a la lista.</a>
+
+                <a href="https://docs.docker.com/">Documentacion de Docker</a>
             </form>
         </div>
     </div>
